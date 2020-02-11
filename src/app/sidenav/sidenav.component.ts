@@ -17,12 +17,14 @@ import {
         'open',
         style({
           width: '240px',
+          transition: 'width 0.5s',
         })
       ),
       state(
         'closed',
         style({
           width: '70px',
+          transition: 'width 0.5s',
         })
       ),
       transition('open <=> closed', [animate('1s')]),
@@ -32,12 +34,14 @@ import {
         'open',
         style({
           marginLeft: '240px',
+          transition: 'margin-left 0.5s',
         })
       ),
       state(
         'closed',
         style({
           marginLeft: '70px',
+          transition: 'margin-left 0.5s',
         })
       ),
       transition('open <=> closed', [animate('1s')]),
