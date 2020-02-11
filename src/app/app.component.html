@@ -1,17 +1,4 @@
-<mat-toolbar id="mainToolbar" color="primary">
-  <mat-icon
-    (click)="onToolbarMenuToggle()"
-    id="toolbarMenu">subject</mat-icon>
-  My Awesome App
-  <span class="toolbar-spacer"></span>
-  <mat-icon
-    class="toolbar-icon"
-    matBadge="8"
-    matBadgePosition="after"
-    matBadgeColor="accent"
-  >notifications</mat-icon>
-</mat-toolbar>
-
+<app-toolbar (menuIconClick)="onToolbarMenuToggle()"></app-toolbar>
 <mat-sidenav-container
   id="sidenavContainer"
  fullscreen>
