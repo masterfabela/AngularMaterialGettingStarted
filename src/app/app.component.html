@@ -1,5 +1,6 @@
 <app-toolbar (menuIconClick)="onToolbarMenuToggle()"></app-toolbar>
-<app-sidenav [isMenuOpen]="isMenuOpen" [contentMargin]="contentMargin">
+<app-sidenav 
+[isMenuOpen]="isMenuOpen">
   <mat-selection-list class="dash-list">
     <h3>TO DO</h3>
     <mat-list-option *ngFor="let todo of task">

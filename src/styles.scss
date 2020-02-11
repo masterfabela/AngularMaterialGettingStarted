@@ -6,34 +6,22 @@ body {
   margin: 0;
 }
 
-#toolbarMenu {
-  cursor: pointer;
-  margin-right: 20px;
-}
-#mainToolbar .toolbar-spacer {
-  flex: 1 1 auto;
-}
-
-#mainToolbar .toolbar-icon {
-  cursor: pointer;
-  margin: 0 8px;
-}
-
-#sidenavContainer {
-  margin-top: 64px;
-}
-
+/*
 #sidenav {
   max-width: 240px;
-}
+}*/
 
+/*
 #sidenav.menu-close {
   width: 70px;
 }
+*/
 
+/*
 #sidenav.menu-open {
   width: 240px;
 }
+*/
 
 #sidenav .avatar {
   background-image: url('http://i.pravatar.cc/300');
@@ -63,6 +51,23 @@ body {
   padding: 12px;
 }
 
+#toolbarMenu {
+  cursor: pointer;
+  margin-right: 20px;
+}
+#mainToolbar .toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+#mainToolbar .toolbar-icon {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
 #sidenav div.mat-drawer-inner-container {
   overflow: hidden;
+}
+
+#sidenavContainer {
+  margin-top: 64px;
 }

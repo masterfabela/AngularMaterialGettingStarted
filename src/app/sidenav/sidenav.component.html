@@ -2,13 +2,11 @@
   id="sidenavContainer"
  fullscreen>
   <mat-sidenav
+    [@openClose]="isMenuOpen ? 'open' : 'closed'"
     mode="side"
     #sidenav
     id="sidenav"
-    [class.menu-open]="isMenuOpen"
-    [class.menu-close]="!isMenuOpen"
     opened>
-    
     <mat-list id="menus">
       <mat-card>
         <mat-card-header>
@@ -47,7 +45,7 @@
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content
-    [ngStyle]="{ 'margin-left.px': contentMargin }"
+    [@openCloseContent]="isMenuOpen ? 'open' : 'closed'"
   >
     <ng-content></ng-content>
   </mat-sidenav-content>
